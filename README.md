@@ -1,4 +1,4 @@
-# blockchain-car-rental
+# blockchain-kyc-online
 
 Project Blocakchain car rental development reposistory
 
