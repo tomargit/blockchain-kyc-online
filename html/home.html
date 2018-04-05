@@ -15,6 +15,20 @@
 		<!-- Custom styles for this template -->
 		<link href="../assets/css/jquery.bxslider.css" rel="stylesheet">
 		<link href="../assets/css/home.css" rel="stylesheet">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/jquery.bxslider.js"></script>
+		<script src="../js/mooz.scripts.min.js"></script>
+		<script type="text/javascript" src="../js/web3.js"></script>
+    <script type="text/javascript">
+        if (typeof window.web3 !== "undefined" && typeof window.web3.currentProvider !== "undefined") {
+            var web3 = new Web3(window.web3.currentProvider);
+        } else {
+            var web3 = new Web3();
+        }
+		</script>
+		<script language="JavaScript" type="text/javascript" src="../js/detailsOfContractInc.js"></script>
+		<script language="JavaScript" type="text/javascript" src="../js/addForm.js"></script>
 	</head>
 	<body>
 
@@ -34,7 +48,7 @@
 						<li><a href="addCustomerDetail.html">Add Customer Detail</a></li>
 						<li><a href="viewCustomerDetail.html">View Customer Detail</a></li>
 					</ul>
-					
+
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="../index.html">Sign Out</a></li>
 					</ul>
@@ -43,26 +57,42 @@
 		</nav>
 
 		<div class="container">
-		<!--<header>
-			<a href="home.html"><img src="../assets/images/car-rental.jpg"></a>
-		</header>-->
-		<section class="main-slider">
-			<ul class="bxslider">
-				<li><div class="slider-item"><img src="../assets/images/kyc.png" title="Funky roots" style="width: 100%; height: 500px;" /></div></li>
-			</ul>
-		<p>KYC online enables to complete KYC process online with direct authorization of clients. The key objective of KYC online is to reduce turnaround time and paper work. KYC online allows you to complete your KYC formalities completely online real time.</p>	
-		</section>
+		<header>
+			<a href="home.html"><img src="../assets/images/kyc.png" style="height: 150px;"></a>
+		</header>
+		<form class="well form-horizontal">
+		 <table class="table table-striped">
+          <tbody>
+             <tr>
+                <td>
+                      <fieldset>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Bank Name:</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group text-align"><span class=""></span></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Bank Registration No:</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group text-align"><span class=""></span></div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">No of Customer checks performed:</label>
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group text-align"><span class=""></span></div>
+                            </div>
+                         </div>
+                      </fieldset>
+                </td>
+             </tr>
+          </tbody>
+       </table>
+	   </form>
 		</div><!-- /.container -->
-		
-		<div style="width: 100%; height: 40px; background-color: black;">
-		</div>
 
-		<!-- Bootstrap core JavaScript
-			================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="../js/jquery.min.js"></script>
-		<script src="../js/bootstrap.min.js"></script>
-		<script src="../js/jquery.bxslider.js"></script>
-		<script src="../js/mooz.scripts.min.js"></script>
+		<div style="width: 100%; height: 40px; background-color: black; position: absolute; bottom: 0;">
+		</div>
 	</body>
 </html>
