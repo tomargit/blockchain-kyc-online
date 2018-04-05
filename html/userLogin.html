@@ -8,22 +8,7 @@
     <link rel="stylesheet" href="../assets/css/normalize.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src='../js/jquery.min.js'></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script>
-    $('.tab a').on('click', function (e) {
 
-        e.preventDefault();
-
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-
-        target = $(this).attr('href');
-
-        $('.tab-content > div').not(target).hide();
-
-        $(target).fadeIn(600);
-    });
-    </script>
     <script  src="../js/index.js"></script>
     <script  src="../js/web3.js"></script>
     <script  src="../js/web3-custom.js"></script>
@@ -138,7 +123,21 @@
       </div><!-- tab-content -->
 
 </div> <!-- /form -->
+<script>
+$('.tab a').on('click', function (e) {
 
+    e.preventDefault();
+
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active');
+
+    target = $(this).attr('href');
+
+    $('.tab-content > div').not(target).hide();
+
+    $(target).fadeIn(600);
+});
+</script>
 
 </body>
 
